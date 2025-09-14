@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CAN YOU DO IT TOWER?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background-color: #555;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 1em;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #777;
+    }
+    main {
+      padding: 2em;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to my Tower</h1>
+    <p>Can you do it Tower?</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <h2>This tower contains obstacles and if you want to know about it see below:</h2>
+    <p>This tower is a tower in roblox but not any type of tower.It is made for practicing keyboard skills see the MAIN creators page to play this game and this game is also always updating to make new obstacles just for you . this is called a obby in roblox but if you want to play go and see my page.</p>
+
+    <h2>creators of this tower in roblox</h2>
+    <ul>
+      <li>whypadanow (MAIN)</li>
+      <li>mypaniop</li>
+     <b>If you like this game favourite this game.
+   </ul>
+  </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tip for creator if you like the game.</title>
+</head>
+<body>
+  <h2>Tip for creator if you like the game.</h2>
+  <label>Bill Amount: ?<input type="number" id="billAmount" /></label><br><br>
+  <label>Tip Percentage: <input type="number" id="tipPercent" /></label><br><br>
+  <button onclick="calculateTip()">Calculate Tip</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateTip() {
+      const bill = parseFloat(document.getElementById("billAmount").value);
+      const tip = parseFloat(document.getElementById("tipPercent").value);
+      if (isNaN(bill) || isNaN(tip)) {
+        document.getElementById("result").innerText = "Please enter valid numbers.";
+        return;
+      }
+      const tipAmount = (bill * tip) / 100;
+      const total = bill + tipAmount;
+      document.getElementById("result").innerText = 
+        `Tip: ?${tipAmount.toFixed(2)} | Total: ?${total.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
